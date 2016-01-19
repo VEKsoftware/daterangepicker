@@ -10,6 +10,7 @@ This widget uses 3.0 Bootstrap CSS since Bootstrap 3.0 is included to Yii 2 as e
 To learn more details about options JS please visit read ://github.com/dangrossman/bootstrap-daterangepicker documentation.
 
 
+
 Usage Example
 ===============
 
