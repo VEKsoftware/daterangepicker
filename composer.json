@@ -16,7 +16,7 @@
 	"require": {
 		"yiisoft/yii2": "*",
 		"yiisoft/yii2-bootstrap": "*",
-		"bower-asset/daterangepicker": "dev-master"
+		"bower-asset/bootstrap-daterangepicker": "dev-master"
 	},
 	"autoload": {
 		"psr-0": { "bburim\\daterangepicker\\": "" }
