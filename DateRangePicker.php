@@ -59,13 +59,6 @@ class DateRangePicker extends Widget
 
 	protected function registerPlugin()
 	{
-
-/*
-		if ($this->moment) {
-			DateRangePickerAsset::$extra_js[] = defined('YII_DEBUG') && YII_DEBUG ? 'moment.js' : 'moment.min.js';
-		}
-*/
-
 		if ($this->selector)
 		{
 			$this->registerJs($this->selector, $this->options, $this->callback);
@@ -74,8 +67,6 @@ class DateRangePicker extends Widget
 			echo Html::tag('input', '', $this->htmlOptions);
 			$this->registerJs("#{$id}", $this->options, $this->callback);
 		}
-
-
 	}
 
 	protected function registerJs($selector, $options, $callback) {
