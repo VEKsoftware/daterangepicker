@@ -19,32 +19,31 @@ Usage Example
 
     // Define  ranges correctly
     $ranges = new \yii\web\JsExpression("{
-    					'Today'        : [Date.today(), Date.today()],
-    					'Yesterday'    : [Date.today().add({ days: -1 }), Date.today().add({ days: -1 })],
-    					'Last 7 Days'  : [Date.today().add({ days: -6 }), Date.today()],
-    					'Last 30 Days' : [Date.today().add({ days: -29 }), Date.today()],
-    					'This Month'   : [Date.today().moveToFirstDayOfMonth(), Date.today().moveToLastDayOfMonth()],
-    					'This Year'    : [Date.today().moveToMonth(0,-1).moveToFirstDayOfMonth(), Date.today()],
-    					'Last Month'   : [Date.today().moveToFirstDayOfMonth().add({ months: -1 }), Date.today().moveToFirstDayOfMonth().add({ days: -1 })]
-    				}");
+                        'Today'        : [Date.today(), Date.today()],
+                        'Yesterday'    : [Date.today().add({ days: -1 }), Date.today().add({ days: -1 })],
+                        'Last 7 Days'  : [Date.today().add({ days: -6 }), Date.today()],
+                        'Last 30 Days' : [Date.today().add({ days: -29 }), Date.today()],
+                        'This Month'   : [Date.today().moveToFirstDayOfMonth(), Date.today().moveToLastDayOfMonth()],
+                        'This Year'    : [Date.today().moveToMonth(0,-1).moveToFirstDayOfMonth(), Date.today()],
+                        'Last Month'   : [Date.today().moveToFirstDayOfMonth().add({ months: -1 }), Date.today().moveToFirstDayOfMonth().add({ days: -1 })]
+                    }");
 
     // Define empty callback fust for fun
     $callback = new \yii\web\JsExpression("function(){}");
 
     // Provide required parameters and render the widget
-	  echo DateRangePicker::widget([
-			'callback' => $callback,
-			'options'  => [
-			   'ranges' => $ranges,
-			   'locale' => [
-			    'firstDay' => 1
-			   ]
-			],
-			'htmlOptions' => [
-		    'name'        => 'daterange',
-		    'class'       => 'form-control',
-		    'placeholder' => 'Select Date Range',
-		    'style'       => 'width:190px;',
-			]
-		]);
-		
+      echo DateRangePicker::widget([
+            'callback' => $callback,
+            'options'  => [
+               'ranges' => $ranges,
+               'locale' => [
+                'firstDay' => 1
+               ]
+            ],
+            'htmlOptions' => [
+            'name'        => 'daterange',
+            'class'       => 'form-control',
+            'placeholder' => 'Select Date Range',
+            'style'       => 'width:190px;',
+            ]
+        ]);
