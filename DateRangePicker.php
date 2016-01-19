@@ -60,9 +60,11 @@ class DateRangePicker extends Widget
 	protected function registerPlugin()
 	{
 
+/*
 		if ($this->moment) {
 			DateRangePickerAsset::$extra_js[] = defined('YII_DEBUG') && YII_DEBUG ? 'moment.js' : 'moment.min.js';
 		}
+*/
 
 		if ($this->selector)
 		{
