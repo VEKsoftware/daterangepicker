@@ -23,15 +23,15 @@ class DateRangePickerAsset extends AssetBundle
 		return parent::init();
 	}
 
-	public $sourcePath = '@bower/bootstrap-daterangepicker';
+	public $sourcePath = '@bower';
 
 	public $css = [
-		'daterangepicker-bs3.css'
+		'bootstrap-daterangepicker/daterangepicker.css'
 	];
 
 	public $js = [
-		'daterangepicker.js',
-		'date.js',
+		'moment/moment.js',
+		'bootstrap-daterangepicker/daterangepicker.js',
 	];
 
 	public $depends = [
