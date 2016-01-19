@@ -19,6 +19,6 @@
 		"bower-asset/bootstrap-daterangepicker": "*"
 	},
 	"autoload": {
-		"psr-0": { "bburim\\daterangepicker\\": "" }
+		"psr-4": { "bburim\\daterangepicker\\": "" }
 	}
 }
