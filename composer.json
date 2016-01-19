@@ -20,6 +20,5 @@
 	},
 	"autoload": {
 		"psr-0": { "bburim\\daterangepicker\\": "" }
-	},
-	"target-dir": "bburim/daterangepicker"
+	}
 }
