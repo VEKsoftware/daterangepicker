@@ -15,6 +15,7 @@ use yii\base\Widget as Widget;
 class DateRangePicker extends Widget
 {
 
+<<<<<<< HEAD
     /**
      * @var string $id
      */
@@ -24,11 +25,6 @@ class DateRangePicker extends Widget
      * @var string $name
      */
     public $name;
-
-    /**
-     * @var string $class
-     */
-    public $class;
 
     /**
      * @var yii\base\Model $model
