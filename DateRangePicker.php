@@ -11,11 +11,10 @@ use yii\web\View;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\base\Widget as Widget;
+use yii\base\InvalidConfigException;
 
 class DateRangePicker extends Widget
 {
-
-<<<<<<< HEAD
     /**
      * @var string $id
      */
